@@ -1,2 +1,6 @@
 # SyncOutlookCalendarToGoogle
-This scripts export the calendar entries of the uncoming 12 months to a csv file and imports it to your google calendar.
+Dieses Script exportiert die Kalendereinträge von Microsoft Outlook in eine CSV Datei und importiert die Datei in den Google Kalender.
+
+# Anforderungen
+- Python 3
+- Powershell 3
