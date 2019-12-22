@@ -3,7 +3,7 @@ Dieses Script exportiert die Kalendereinträge von Microsoft Outlook in eine CSV
 
 # Anforderungen
 - Python 3
-- Powershell 3
+- Powershell 3 oder höher
 
 # Anleitung:
 
