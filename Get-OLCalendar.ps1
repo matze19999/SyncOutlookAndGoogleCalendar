@@ -51,4 +51,4 @@ $O | Out-File -FilePath .\events.csv -Append
 Set-Alias GCALI Get-OLCalendarItem 
 
 
-Get-OLCalendarItem -start "6/25/2019 12:30:22" -end "12/25/2020 12:30:22"
+Get-OLCalendarItem
