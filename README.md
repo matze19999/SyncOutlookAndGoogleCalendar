@@ -8,7 +8,7 @@ Dieses Script exportiert die Kalendereinträge von Microsoft Outlook in eine CSV
 - Office 2016
 
 # Anforderungen
-- Python 3
+- Python 3 oder höher
 - Powershell 3 oder höher
 
 # Anleitung:
