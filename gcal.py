@@ -67,7 +67,7 @@ def main():
                     'credentials.json', SCOPES)
                 creds = flow.run_local_server(port=0)
             except FileNotFoundError:
-                print("Du hast vergessen die Datei credentials.json herunterzuladen! Bitte nachholen.")
+                print("\nDu hast vergessen die Datei credentials.json herunterzuladen!\n\nBitte auf folgender Website den Button 'Enable the Google Calender API' drücken.")
                 time.sleep(3)
                 url = "https://developers.google.com/calendar/quickstart/python"
                 webbrowser.open(url)
@@ -163,7 +163,7 @@ def main():
                     print("Termin gefunden: " + start, event['summary'])
 
     except FileNotFoundError:
-        print("\nKeine CSV Datei gefunden! Evtl. wurden in Outlook keine Termine gefunden oder das PowerShell Script wurde nicht gestartet!")
+        print("\nKeine CSV Datei gefunden! Evtl. wurden in Outlook keine Termine gefunden oder das PowerShell Script wurde nicht gestartet!\n")
         exit(1)
 
     os.remove("events.csv")
