@@ -12,7 +12,8 @@ if %errorlevel% == 1 goto nopythoninstalled
 if %errorlevel% == 0 goto run
 
 :nopythoninstalled
-echo "Es ist kein Python3 installiert!"
+echo Es ist kein Python3 installiert, bitte hier downloaden:
+start https://www.microsoft.com/de-de/p/python-37/9nj46sx7x90p
 pause
 exit 1
 
