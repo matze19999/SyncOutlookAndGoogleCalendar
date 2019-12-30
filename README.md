@@ -39,3 +39,4 @@ https://support.microsoft.com/de-at/help/3189806/a-program-is-trying-to-send-an-
 
 2.
 Standardmäßig wird der Outlook Kalender zum Google Kalender synchronisiert. Wenn du den Google Kalender zum Outlook Kalender synchronisieren willst, ändere in der run.cmd die Variable "mode" in Zeile 3 zu 1.
+Wenn du beide nacheinander synchronisieren willst, schreibe den Wert 3 in die Variable Mode.
