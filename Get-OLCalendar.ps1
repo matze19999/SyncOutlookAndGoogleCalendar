@@ -4,6 +4,8 @@ param (
 [String]$mode="0"
 )
 
+Clear-Host
+
 #Requires -Version 3.0
 Function Get-OLCalendarItem {
 
@@ -51,13 +53,13 @@ $O | Out-File -FilePath .\events.csv -Append -Encoding 'utf8'
  
 Function Set-OLCalendarItem {
 
-    # load the required .NET types
+    # Lade .NET types
     Add-Type -AssemblyName 'Microsoft.Office.Interop.Outlook'
     
-    # access Outlook object model
+    # Greife auf Outlook Objekt Modell zu
     $outlook = New-Object -ComObject outlook.application
 
-    # connect to the appropriate location
+    # Verbinde Outlook 
     $namespace = $outlook.GetNameSpace('MAPI')
     $Calendar = [Microsoft.Office.Interop.Outlook.OlDefaultFolders]::olFolderCalendar
     $folder = $namespace.getDefaultFolder($Calendar)
@@ -113,7 +115,7 @@ elseif($mode -eq "2"){
     Set-OLCalendarItem
 }
 else{
-    Write-Host "Kein Parameter übergeben!"
+    Write-Host "Kein Parameter mitgegeben!"
 }
 
 Write-Host "Fertig!"
