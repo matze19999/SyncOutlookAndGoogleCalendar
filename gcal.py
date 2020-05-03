@@ -25,7 +25,7 @@ try:
         from googleapiclient.discovery import build
         from google_auth_oauthlib.flow import InstalledAppFlow
         from google.auth.transport.requests import Request
-    except:
+    except ModuleNotFoundError:
         print("Fehlende Pakete werden installiert...\n\n\n")
         os.system("pip3 install --upgrade google-api-python-client google-auth-httplib2 google-auth-oauthlib datetime requests python-csv pytz")
         print("\n\nBitte Script neustarten!")
